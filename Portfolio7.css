@@ -14,6 +14,33 @@ header {
     overflow-x: hidden;
 }
 
-div {
-    display: block;
+.main {
+    background-color: #3569a5;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: white 1pc solid;
+    transition: linear 2s;
+}
+
+.main:hover {
+    width: 50%;
+    background-color: white
+}
+
+.main-title {
+    color: #d6c32d;
+    left: 0;
+    margin-top: -100px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+
+}
+
+hr {
+    width: 10%;
+    margin: 0 auto;
+    background-color: red;
 }
