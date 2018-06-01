@@ -10,27 +10,49 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="Portfolio7.css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+    <script src="anime.min.js"></script>
 
 </head>
 
 <body>
-    <header>
-        <div class="main">
-            <div class="main-title">
-                <div class="title">
-                    <h1>Omar Baig</h1>
-                </div>
+
+    <header class="intro container">
+        <div>
+            <p class="name text-center">Omar Baig</p>
+        </div>
+        <div>
+            <p class="subtitle text-center">Front-End Developer</p>
+        </div>
+        <div class="button-links">
+            <div>
+                <button class="col-sm-3 button-link text-center left-line-out">About</button>
+            </div>
+            <div>
+                <button class="col-sm-3 button-link text-center left-line-out">Works</button>
+            </div>
+            <div>
+                <button class="col-sm-3 button-link text-center left-line-out">Languages</button>
+            </div>
+            <div>
+                <button class="col-sm-3 button-link text-center left-line-out">Contact</button>
             </div>
         </div>
-        <section>
-
-        </section>
     </header>
 
-
+    <canvas class="background"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script>
-        var slide = document.querySelector("main");
+        window.onload = function() {
+            Particles.init({
+                selector: '.background',
+                connectParticles: true,
+                sizeVariations: 4,
+                speed: .3,
+                maxParticles: 150,
+                color: '#1f741f',
+                minDistance: 100
+            });
+        };
 
     </script>
 

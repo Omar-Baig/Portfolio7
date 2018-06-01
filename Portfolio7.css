@@ -14,67 +14,69 @@ header {
     overflow-x: hidden;
 }
 
-.main {
-    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-    position: relative;
-    height: 100%;
-    width: 100%;
-    border: white 1pc solid;
-    transition: ease 5s;
-}
-
-.main:hover {
-    padding: 1pc;
-    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-}
-
-.main-title {
-    color: #FDE74C;
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
     left: 0;
-    margin-top: -30px;
-    position: fixed;
+    z-index: 0;
+}
+
+.intro {
+    color: #d6c32d;
+    left: 0;
+    margin-top: -100px;
+    position: relative;
     text-align: center;
     top: 50%;
     width: 100%;
 }
 
-.menu {
-    position: absolute;
-    top: 50%;
-    padding-left: 20px;
+.left-line-out {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
     color: #d6c32d;
+    z-index: 99;
 }
 
-.works {
-    position: absolute;
-    top: 50%;
-    right: 20px;
+.left-line-out:after {
+    content: '';
+    display: block;
+    margin-top: 2px;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    z-index: 99;
+}
+
+.left-line-out:hover:after {
+    width: 100%;
+    background: #d6c32d;
+    z-index: 99;
+}
+
+.name {
+    font-size: 38px;
+}
+
+.subtitle {
+    font-size: 18px;
+}
+
+.button-links {
     color: #d6c32d;
+    left: 0;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 500px;
 }
 
-.about {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    color: #d6c32d;
-}
-
-.fa-align-center {
-    font-size: 20px;
-    tranisition: linear 3s;
-}
-
-.fa-align-left {
-    font-size: 20px;
-}
-
-.fa-align-right {
-    font-size: 20px;
-}
-
-.fa-align-right:hover,
-.fa-align-left:hover,
-.fa-align-center:hover {
-    font-size: 30px;
-
+.button-link {
+    padding-top: 5px;
+    background-color: transparent;
+    font-size: 16px;
+    max-width: 500px;
 }
