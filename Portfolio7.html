@@ -3,11 +3,12 @@
 <html>
 
 <head>
-    <title>Omar Baig's Portfolio</title>
+    <title>Omar Baig</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="Portfolio7.css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="anime.min.js"></script>
@@ -15,29 +16,65 @@
 </head>
 
 <body>
-
+    <!--    Intro Section   -->
     <header class="intro container">
         <div>
-            <p class="name text-center">Omar Baig</p>
+            <p class="name text-center animated bounceIn">Omar Baig</p>
         </div>
         <div>
-            <p class="subtitle text-center">Front-End Developer</p>
+            <p class="subtitle text-center animated bounceIn">Front-End Developer</p>
         </div>
         <div class="button-links">
             <div>
-                <button class="col-sm-3 button-link text-center left-line-out">About</button>
+                <button class="col-sm-4 button-link text-center left-line-out animated infinite pulse">About</button>
             </div>
             <div>
-                <button class="col-sm-3 button-link text-center left-line-out">Works</button>
+                <button class="col-sm-4 button-link text-center left-line-out animated infinite pulse">Works</button>
             </div>
             <div>
-                <button class="col-sm-3 button-link text-center left-line-out">Languages</button>
-            </div>
-            <div>
-                <button class="col-sm-3 button-link text-center left-line-out">Contact</button>
+                <button class="col-sm-4 button-link text-center left-line-out animated infinite pulse">Contact</button>
             </div>
         </div>
+
     </header>
+
+    <!--    About Section   -->
+    <section style="height:100%">
+        <div class="about-section container">
+            <div class="about-title text-center">
+                <p>About</p>
+            </div>
+            <div class="gradient"></div>
+            <div class="col-sm-6">
+                <p class="text-center about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <img src="blackcat.jpg" class="about-pic">
+            </div>
+    </section>
+    <!--    Works Section    -->
+    <section style="height:100%;">
+        <div class="work-section container">
+            <div class="work-title text-center">
+                <p>Work</p>
+            </div>
+            <div class="gradient"></div>
+            <div class="col-sm-4 ">
+                <img src="blackcat.jpg" class="work-pic">
+            </div>
+            <div class="col-sm-4 ">
+                <img src="blackcat.jpg" class="work-pic">
+            </div>
+            <div class="col-sm-4 ">
+                <img src="blackcat.jpg" class="work-pic">
+            </div>
+            <div class="col-sm-6 ">
+                <img src="blackcat.jpg" class="work-pic">
+            </div>
+        </div>
+
+    </section>
 
     <canvas class="background"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
@@ -49,8 +86,8 @@
                 sizeVariations: 4,
                 speed: .3,
                 maxParticles: 150,
-                color: '#1f741f',
-                minDistance: 100
+                color: ['#145A32', '#78b2d8', '#F1C40F'],
+                minDistance: 120
             });
         };
 
