@@ -111,18 +111,18 @@ header {
     width: 100px;
     margin: 0 auto;
     height: 3px;
-    background-color: goldenrod;
+    background-color: #eaaf1b;
 }
 
 .section-sub-heading {
-    font-size: 1.25em;
+    font-size: 1.12em;
+    padding: .5pc;
 }
 
 .title-container {
     border: 3px solid goldenrod;
     margin: 2pc auto;
     width: 70%;
-
 }
 
 .about-pic {
@@ -146,9 +146,25 @@ header {
     height: 30px;
 }
 
+.works-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    border-bottom: 2px solid gold;
+    width: 200px;
+    margin: 0 auto;
+}
+
 .work-pic {
     width: 100%;
     padding: 10px;
+    lorem ipsum dolor
+}
+
+.work-description {
+    font-size: 1.2em;
+    margin-top: 10px;
+    letter-spacing: .5px;
+    padding: .3pc
 }
 
 @media only screen and (max-width:992px) {
@@ -156,7 +172,6 @@ header {
         font-size: 1.15em;
     }
 }
-
 
 @-webkit-keyframes gradient {
     0% {
